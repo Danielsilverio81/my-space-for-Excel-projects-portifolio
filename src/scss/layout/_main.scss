@@ -1,0 +1,17 @@
+@use "../utils/variable" as *;
+
+h1 {
+    margin: 20px 10px;
+    text-align: center;
+    color: $secondary-color;
+    text-shadow: 2px 2px 3px black;
+}
+
+.box-container {
+    margin: 30px auto;
+    padding: 10px;
+    background-color: $secondary-color;
+    width: 90%;
+    height: 700px;
+    border-radius: 10px;
+}
