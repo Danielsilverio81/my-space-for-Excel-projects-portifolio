@@ -1,0 +1,22 @@
+@use "../utils/variable" as *;
+
+
+h1 {
+    padding: 10px;
+    color: $header-background;
+    text-shadow: 2px 2px 3px black;
+    text-align: center;
+}
+
+.sidebar {
+    padding: 15px;
+    grid-area: sidebar;
+    .call-action {
+        margin: 5px auto;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: $radius-15;
+        box-shadow: 2px 2px 3px black;
+        width: 80%;
+    }
+}

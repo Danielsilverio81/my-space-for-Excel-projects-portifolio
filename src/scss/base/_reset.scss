@@ -1,5 +1,24 @@
+@use "../base/typography" as *;
+@use "../utils/variable" as *;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $primary-color;
+    font-family: $typography-default;
+}
+
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "sidebar main main";
 }

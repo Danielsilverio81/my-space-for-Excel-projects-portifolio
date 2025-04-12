@@ -1,17 +1,32 @@
 @use "../utils/variable" as *;
+@use "../utils/mixins" as *;
 
-h1 {
-    margin: 20px 10px;
-    text-align: center;
-    color: $secondary-color;
-    text-shadow: 2px 2px 3px black;
+
+.img-content {
+    margin: 10px;
+    border: 4px solid;
+    border-right: none;
+    border-bottom: none;
+   img {
+    width: 50%;
+    border-bottom-right-radius: $radius-10;
+   }
 }
 
-.box-container {
-    margin: 30px auto;
-    padding: 10px;
-    background-color: $secondary-color;
+main {
+    grid-area: main;
     width: 90%;
-    height: 700px;
-    border-radius: 10px;
+    #about {
+        margin: 12px;
+    }
+    .about-info {
+        @include card;
+    }
+    #projects {
+        margin: 12px;
+        margin-top: 60px;
+    }
+    .projects-info {
+        @include card;
+    }
 }
