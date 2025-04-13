@@ -15,7 +15,7 @@ body {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "sidebar main main" "card card card";
+  grid-template-areas: "header header header" "sidebar main main" "card card card" "footer footer footer";
 }
 
 header {
@@ -128,15 +128,16 @@ h1 {
 .card-area .container-videos {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* <- aqui faz quebrar */
-  gap: 5px;
+  grid-template-columns: repeat(4, 1fr); /* <- aqui faz quebrar */
+  gap: 3px;
   justify-content: center;
 }
 .card-area .container-videos .video-elem {
-  width: 220px;
-  height: 180px;
+  width: 230px;
+  height: 190px;
 }
 .card-area .video-wrapper {
+  margin-top: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,6 +160,23 @@ h1 {
   margin: 5px;
   text-align: center;
   font-size: 12px;
+}
+
+.footer-content {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #A2AF9B;
+}
+.footer-content .links-footer {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 10rem;
 }
 
 /*# sourceMappingURL=style.css.map */

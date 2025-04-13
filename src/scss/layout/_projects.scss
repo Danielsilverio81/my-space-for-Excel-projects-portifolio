@@ -19,16 +19,17 @@
     .container-videos {
         width: 90%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* <- aqui faz quebrar */
-        gap: 5px;   
+        grid-template-columns: repeat(4, 1fr); /* <- aqui faz quebrar */
+        gap: 3px;   
         justify-content: center;
         .video-elem {
-            width: 220px;
-            height: 180px;
+            width: 230px;
+            height: 190px;
         }
     }
     
     .video-wrapper {
+        margin-top: 5px;
         @include center;
         max-width: 250px;
         width: 100%;

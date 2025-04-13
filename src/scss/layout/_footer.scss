@@ -1,0 +1,16 @@
+@use "../utils/variable" as *;
+@use "../utils/mixins" as *;
+
+.footer-content {
+    margin-top: 15px;
+    @include center;
+    flex-direction: column;
+    background-color: $header-background;
+
+    .links-footer {
+        margin: 5px;
+        @include center;   
+        justify-content: space-between;
+        gap: 10rem;
+    }
+}
