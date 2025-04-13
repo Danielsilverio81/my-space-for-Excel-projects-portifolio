@@ -1,0 +1,56 @@
+@use "../utils/mixins" as *;
+@use "../utils/variable" as *;
+
+.card-area {
+    width: 100%;
+    grid-area: card;
+    @include center;
+    flex-direction: column;
+    padding: 5px 20px;
+    #projects {
+        margin: 12px;
+        margin-top: 40px;
+    }
+    .projects-info {
+        margin: 2px auto;
+        @include card;
+        width: 70%;
+    }
+    .container-videos {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* <- aqui faz quebrar */
+        gap: 5px;   
+        justify-content: center;
+        .video-elem {
+            width: 220px;
+            height: 180px;
+        }
+    }
+    
+    .video-wrapper {
+        @include center;
+        max-width: 250px;
+        width: 100%;
+        flex-direction: column;
+        padding: 2px;
+        background-color: $header-background;
+        border: 2px solid black;
+        box-shadow: 2px 2px 3px black;
+        border-radius: $radius-15;
+
+        h2 {
+            font-size: 15px;
+        }
+
+        .video-description {
+            background-color: $primary-color;
+            border-radius: $radius-5;
+            padding: 2px;
+            margin: 5px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+}
+

@@ -15,7 +15,7 @@ body {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "sidebar main main";
+  grid-template-areas: "header header header" "sidebar main main" "card card card";
 }
 
 header {
@@ -68,24 +68,12 @@ nav ul li a:hover {
 
 main {
   grid-area: main;
-  width: 90%;
+  width: 100%;
 }
 main #about {
   margin: 12px;
 }
 main .about-info {
-  margin: 12px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 15px;
-  box-shadow: 2px 2px 3px black;
-  width: 85%;
-}
-main #projects {
-  margin: 12px;
-  margin-top: 60px;
-}
-main .projects-info {
   margin: 12px;
   padding: 10px;
   border: 1px solid black;
@@ -111,7 +99,66 @@ h1 {
   border: 1px solid black;
   border-radius: 15px;
   box-shadow: 2px 2px 3px black;
-  width: 80%;
+  width: 85%;
+}
+
+.card-area {
+  width: 100%;
+  grid-area: card;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px 20px;
+}
+.card-area #projects {
+  margin: 12px;
+  margin-top: 40px;
+}
+.card-area .projects-info {
+  margin: 2px auto;
+  margin: 12px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 3px black;
+  width: 85%;
+  width: 70%;
+}
+.card-area .container-videos {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* <- aqui faz quebrar */
+  gap: 5px;
+  justify-content: center;
+}
+.card-area .container-videos .video-elem {
+  width: 220px;
+  height: 180px;
+}
+.card-area .video-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  width: 100%;
+  flex-direction: column;
+  padding: 2px;
+  background-color: #A2AF9B;
+  border: 2px solid black;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 15px;
+}
+.card-area .video-wrapper h2 {
+  font-size: 15px;
+}
+.card-area .video-wrapper .video-description {
+  background-color: #F4F6F2;
+  border-radius: 5px;
+  padding: 2px;
+  margin: 5px;
+  text-align: center;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

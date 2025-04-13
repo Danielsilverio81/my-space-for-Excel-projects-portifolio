@@ -20,5 +20,6 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     "header header header"
-    "sidebar main main";
+    "sidebar main main"
+    "card card card";
 }

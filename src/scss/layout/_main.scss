@@ -15,18 +15,11 @@
 
 main {
     grid-area: main;
-    width: 90%;
+    width: 100%;
     #about {
         margin: 12px;
     }
     .about-info {
-        @include card;
-    }
-    #projects {
-        margin: 12px;
-        margin-top: 60px;
-    }
-    .projects-info {
         @include card;
     }
 }

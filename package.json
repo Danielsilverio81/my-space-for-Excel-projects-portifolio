@@ -1,0 +1,21 @@
+{
+  "name": "portifolio-excel",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielsilverio81/my-space-for-Excel-projects-portifolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielsilverio81/my-space-for-Excel-projects-portifolio/issues"
+  },
+  "homepage": "https://github.com/Danielsilverio81/my-space-for-Excel-projects-portifolio#readme"
+}
